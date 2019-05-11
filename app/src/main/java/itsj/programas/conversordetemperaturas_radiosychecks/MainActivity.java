@@ -2,6 +2,7 @@ package itsj.programas.conversordetemperaturas_radiosychecks;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -9,7 +10,7 @@ import android.widget.RadioButton;
 
 import java.text.DecimalFormat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnKeyListener, View.OnClickListener {
 
     EditText cajaEntrada, cajaC, cajaF, cajaK, cajaR;
     RadioButton radioC, radioF, radioK, radioR;
@@ -53,5 +54,30 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void habilitarCheckBoxes(boolean c, boolean f, boolean k, boolean r){
+        limpiarCajas();
+        limpiarCheckBoxes();
+
+        checkC.setEnabled(c);
+        cajaC.setEnabled(c);
+
+        checkF.setEnabled(f);
+        cajaF.setEnabled(f);
+
+        checkK.setEnabled(k);
+        cajaK.setEnabled(k);
+
+        checkR.setEnabled(r);
+        cajaR.setEnabled(r);
+    }
+
+    @Override
+    public void onClick(View v) {}
+
+    @Override
+    public boolean onKey(View v, int keyCode, KeyEvent event) {
+        return false;
     }
 }
