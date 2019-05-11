@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="225dp"
+        android:text="@string/lbl_convertir"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/caja_entrada"
+        android:layout_width="285dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/caja_entrada"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_convertir" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="285dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="19dp"
+        android:orientation="horizontal"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_entrada">
+
+        <RadioButton
+            android:id="@+id/radio_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_grados_c"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_grados_f"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_grados_k"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_grados_r"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbl_a_grados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="227dp"
+        android:text="@string/lbl_a_grados"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="62dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_a_grados">
+
+        <CheckBox
+            android:id="@+id/check_c"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/check_grados_c"
+            android:textColor="#FC020000"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/check_f"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/check_grados_f"
+            android:textColor="#FC020000"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/check_k"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/check_grados_k"
+            android:textColor="#FC020000"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/check_r"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/check_grados_r"
+            android:textColor="#FC020000"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/caja_c"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="19dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/caja_grados_c"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_a_grados" />
+
+    <EditText
+        android:id="@+id/caja_f"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="19dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/caja_grados_f"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/caja_c" />
+
+    <EditText
+        android:id="@+id/caja_k"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="19dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/caja_grados_k"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/caja_f" />
+
+    <EditText
+        android:id="@+id/caja_r"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="19dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/caja_grados_r"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/caja_k" />
+
+</android.support.constraint.ConstraintLayout>
