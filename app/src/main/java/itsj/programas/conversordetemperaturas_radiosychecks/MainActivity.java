@@ -73,6 +73,13 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         cajaR.setEnabled(r);
     }
 
+    public void limpiarCajas(){
+        cajaC.setText("");
+        cajaF.setText("");
+        cajaK.setText("");
+        cajaR.setText("");
+    }
+
     @Override
     public void onClick(View v) {}
 
