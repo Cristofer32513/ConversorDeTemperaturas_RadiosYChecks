@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ConversorDeTemperaturas_RadiosYChecks</string>
+
+    <string name="lbl_convertir">Convertir:</string>
+    <string name="caja_entrada"></string>
+    <string name="radio_grados_c">° C</string>
+    <string name="radio_grados_f">° F</string>
+    <string name="radio_grados_k">° K</string>
+    <string name="radio_grados_r">° R</string>
+    <string name="lbl_a_grados">A grados:</string>
+    <string name="check_grados_c">° C</string>
+    <string name="check_grados_f">° F</string>
+    <string name="check_grados_k">° K</string>
+    <string name="check_grados_r">° R</string>
+    <string name="caja_grados_c"></string>
+    <string name="caja_grados_f"></string>
+    <string name="caja_grados_k"></string>
+    <string name="caja_grados_r"></string>
+</resources>
