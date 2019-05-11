@@ -1,5 +1,6 @@
 package itsj.programas.conversordetemperaturas_radiosychecks;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                     return true;
             }
         });
-        
+
         cajaC=findViewById(R.id.caja_c);
         cajaF=findViewById(R.id.caja_f);
         cajaK=findViewById(R.id.caja_k);
@@ -160,6 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
 
     }
 
+    @SuppressLint("SetTextI18n")
     public void convertir(){
         limpiarCajas();
         if(cajaEntrada.getText().toString().equals("")) {
