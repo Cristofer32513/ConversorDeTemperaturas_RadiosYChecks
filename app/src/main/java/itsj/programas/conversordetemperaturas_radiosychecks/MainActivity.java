@@ -54,9 +54,15 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                 habilitarCheckBoxes(true, true, false, true);
             }
         });
-        
-        radioR=findViewById(R.id.radio_r);
 
+        radioR=findViewById(R.id.radio_r);
+        radioR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                habilitarCheckBoxes(true, true, true, false);
+            }
+        });
+        
         checkC=findViewById(R.id.check_c);
 
         checkF=findViewById(R.id.check_f);
