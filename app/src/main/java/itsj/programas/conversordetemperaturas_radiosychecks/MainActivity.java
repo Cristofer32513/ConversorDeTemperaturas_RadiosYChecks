@@ -73,9 +73,17 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                 convertir();
             }
         });
-        
-        checkF=findViewById(R.id.check_f);
 
+        checkF=findViewById(R.id.check_f);
+        checkF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkF.isChecked())
+                    cajaF.setText("");
+                convertir();
+            }
+        });
+        
         checkK=findViewById(R.id.check_k);
 
         checkR=findViewById(R.id.check_r);
