@@ -40,7 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         });
 
         radioF=findViewById(R.id.radio_f);
-
+        radioF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                habilitarCheckBoxes(true, false, true, true);
+            }
+        });
+        
         radioK=findViewById(R.id.radio_k);
 
         radioR=findViewById(R.id.radio_r);
