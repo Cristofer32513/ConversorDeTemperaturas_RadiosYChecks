@@ -65,7 +65,15 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         });
 
         checkC=findViewById(R.id.check_c);
-
+        checkC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkC.isChecked())
+                    cajaC.setText("");
+                convertir();
+            }
+        });
+        
         checkF=findViewById(R.id.check_f);
 
         checkK=findViewById(R.id.check_k);
@@ -80,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
 
 
     }
-    
+
     public void convertir(){
         limpiarCajas();
         if(cajaEntrada.getText().toString().equals("")) {
