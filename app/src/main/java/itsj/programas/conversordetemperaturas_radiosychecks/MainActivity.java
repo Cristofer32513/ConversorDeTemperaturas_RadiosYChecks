@@ -80,6 +80,13 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         cajaR.setText("");
     }
 
+    public void limpiarCheckBoxes(){
+        checkC.setChecked(false);
+        checkF.setChecked(false);
+        checkK.setChecked(false);
+        checkR.setChecked(false);
+    }
+
     @Override
     public void onClick(View v) {}
 
