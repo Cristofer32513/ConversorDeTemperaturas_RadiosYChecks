@@ -9,7 +9,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
-
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity implements View.OnKeyListener, View.OnClickListener {
@@ -156,9 +155,6 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         cajaF.setEnabled(false);
         cajaK.setEnabled(false);
         cajaR.setEnabled(false);
-
-
-
     }
 
     @SuppressLint("SetTextI18n")
